@@ -1,0 +1,87 @@
+body {
+    background-color: rgba(196, 196, 196, 0.2);
+}
+
+p, h1, h2, h3, h4, h5, h6, strong, span, a, li {
+    font-family: 'Poppins', sans-serif;
+    color: #334752;
+}
+
+h1, h2, h3, h4, h5, h6, span {
+    font-weight: 700;
+}
+
+p {
+    font-weight: normal;
+}
+
+.logo {
+    width: 10em;
+}
+
+.nav-text {
+    font-weight: 700;
+}
+
+.hero-img {
+    width: 32em;
+    box-shadow: 5px 5px 15px;
+}
+
+.hero-title {
+    line-height: 1.5em;
+    font-size: 5em;
+}
+
+.hero-text {
+    padding-top: 5em;
+    font-size: 1.2em;
+}
+
+.how-title {
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.icon {
+    fill: #46B39D;
+    width: 5em;
+}
+
+.submit-button {
+    background-color: #F0CA4D;
+    padding: 1em;
+    border-radius: 2em;
+    
+}
+
+.submit-button:hover {
+    background-color: cornflowerblue;
+}
+
+.project-title {
+    font-size: 4em;
+    font-weight: 600;
+    padding: 0.5em 0 0.3em 0;
+}
+
+.project-subtitle {
+    font-weight: normal;
+    padding: 0.3em 0 0.5em 0;
+}
+
+.avatar {
+    display: inline;
+    width: 3em;
+    padding-right: 1em;
+}
+
+.users-list {
+    padding: 1em;
+    background: #EEEEEE;
+    list-style-type: none;
+}
+
+.rank-position {
+    padding: 0 0 1em 0;
+}
