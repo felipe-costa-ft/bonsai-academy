@@ -168,6 +168,10 @@ p {
 
 /* Pagina do desafio */
 
+.modal {
+    max-width: auto;
+}
+
 .page-title {
     font-size: 5em;
     font-weight: 600;
