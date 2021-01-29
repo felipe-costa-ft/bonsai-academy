@@ -68,6 +68,104 @@ p {
     width: 5em;
 }
 
+/* Lista de desafios*/
+
+.challenges-page {
+    background-color: white;
+}
+
+.stack {
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.stack:hover {
+    cursor: pointer;
+}
+
+#front-end-button:hover {
+    color:  #334752;
+    text-decoration: underline;
+    text-decoration-color:  #334752;
+}
+
+#front-end-button:focus {
+    color:  #334752;
+    text-decoration: underline;
+    text-decoration-color:  #334752;
+}
+
+.active-button {
+    text-decoration: underline;
+    text-decoration-color:  #334752;
+}
+
+#back-end-button:hover {
+    color:  #334752;
+    text-decoration: underline;
+    text-decoration-color:  #334752;
+}
+
+#back-end-button:active {
+    text-decoration: underline;
+    text-decoration-color:  #334752;
+}
+
+.challenges-list {
+    display: flex;
+    gap: 5em;
+}
+
+.back-list {
+    display: none;
+}
+
+.challenge-card {
+    width: 20em;
+}
+
+.card-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15em;
+}
+
+.card-image img {
+    max-width: 90%;
+}
+
+.challenge-card-body {
+    background-color: #e5e5e5;
+    height: 17em;
+}
+
+.challenge-card-title {
+    font-size: 1.5em;
+}
+
+.challenge-card-footer {
+    background-color: #e5e5e5;
+    border: none;
+    outline: none;
+}
+
+.challenge-card-button {
+    background-color: #65F0D4;
+    border-radius: 2em;
+    padding: 0.5em 2em;
+    margin-bottom: 1em;
+}
+
+.challenge-card-button:hover {
+    background-color: #F0CA4D;
+}
+
+.level-name {
+    padding-bottom: 1em;
+}
+
 /* Pagina do desafio */
 
 .page-title {
@@ -78,12 +176,13 @@ p {
 
 .page-subtitle {
     font-weight: normal;
-    padding: 0.3em 0 0.5em 0;
+    margin: 0.3em 0 0.5em 0;
     font-size: 2.5em;
 }
 
 .tag {
     color: #6A5AE0;
+    text-align: left;
 }
 
 .explanation {
@@ -178,6 +277,16 @@ p {
 
     .page-subtitle {
         font-size: 2em;
+    }
+
+    .challenges-list {
+        display: block;
+    }
+
+    .challenge-card {
+        margin-bottom: 2em;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
