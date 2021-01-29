@@ -53,7 +53,7 @@
 
 
 </head>
-<body>
+<body class="challenges-page">
 
     <header class="bg-light">
         <nav class="container navbar navbar-expand-md navbar-light">
@@ -67,62 +67,90 @@
         </nav>
     </header>
 
-    <br>
 
-    <section class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-6 text-center">
-                <img class="hero-img" src="./img/true-agency-o4UhdLv5jbQ-unsplash.jpg" alt="">
-            </div>
-            <div class="col-md">
-                <h1 class="hero-title">Aprenda praticando</h1>
-                <div class="hero-text text-end">
-                    <p>
-                        Sabe aquela sensação de assistir <span>todos os tutoriais e cursos</span> possíveis, mas ainda se 
-                        sentir <span>inseguro</span>?
-                    </p>
-                    <p>
-                        Se sim, é porque chegou sua hora de <span>PRATICAR!</span> Aqui é o lugar perfeito pra você <span>fazer, 
-                        errar, refazer</span> e descobrir que é <span>mais capaz do que imaginava.</span>
-                    </p>
-                </div>
-            </div>
+    <section class="container page-section">
+        <h1 class="text-center page-title">Desafios</h1>
+        <div class="stack">
+            <h2 class="page-subtitle active-button" id="front-end-button" onclick="showFrontEnd()">Front-end</h2>
+            <h2 class="page-subtitle" id="back-end-button" onclick="showBackEnd()">Back-end</h2>
         </div>
     </section>
 
-    <section class="container">
-        <h2 class="text-center how-title">Como funciona?</h2>
-        <div class="row justify-content-md-center">
-            <div class="col-sm text-center">
-                <img  class="icon" src="./img/task-svgrepo-com.svg" alt="">
-                <p>Escolha o projeto</p>
-            </div>
-            <div class="col-sm text-center">
-                <img class="icon" src="./img/computer-svgrepo-com.svg" alt="">
-                <p>Hora de codar e dar o seu melhor</p>
-            </div>
-            <div class="col-sm text-center">
-                <img class="icon" src="./img/upload-svgrepo-com.svg" alt="">
-                <p>Envie seu projeto finalizado</p>
-            </div>
-            <div class="col-sm text-center">
-                <img class="icon" src="./img/person-feedback-svgrepo-com.svg" alt="">
-                <p>Receba Feedbacks e Dicas sobre sua entrega</p>
-            </div>
-            <div class="col-sm text-center">
-                <img class="icon" src="./img/medal-svgrepo-com.svg" alt="">
-                <p>Ganhe pontos pelo seu esforço e se destaque no ranking</p>
-            </div>
-          </div>
-    </section>
+    <!-- LISTA DE DESAFIOS DE FRONT-END -->
 
-    <br>
+    <article class="front-list" id="front-list">
+        <section class="container page-section">
+            <h2 class="level-name">Nível 1 - Novato</h2>
+    
+            <div class="challenges-list">
+                
+                <article class="card challenge-card">
+                    <div class="card-image">
+                        <img src="./desafios/front-end/img/nv1-1.png" alt="Exemplo do exercicio">
+                    </div>
+                    <div class="card-body text-center challenge-card-body">
+                        <p class="tag">HTML e CSS</p>
+                        <h1 class="challenge-card-title">Seção de Apresentação Livraria</h1>
+                        <p>Você está começando no mundo do HTML e CSS e seu amigo 
+                            pediu uma ajudinha para criar um site da sua nova livraria.</p>
+                    </div>
+                    <div class="card-footer challenge-card-footer text-center">
+                        <a href="#" class="btn challenge-card-button">Abrir desafio</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+    
+        <section class="container page-section">
+            <h2 class="level-name">Nível 2 - Estagiário</h2>
+    
+            <div class="challenges-list">
+                
+            </div>
+    
+        </section>
+    
+        <section class="container page-section">
+            <h2 class="level-name">Nível 3 - Freelancer Iniciante</h2>
+    
+            <div class="challenges-list">
 
-    <section class="container text-center">
-        <a class="btn strong-button" href="./desafios/front-end/nv1-1.html">Comece seu projeto</a>
-    </section>
+            </div>
+                
+    
+        </section>
+    </article>
 
-    <br>
+    <!-- LISTA DE DESAFIOS DE BACK-END -->
+
+    <article class="back-list" id="back-list">
+        <section class="container page-section">
+            <h2 class="level-name">Nível 1 - Novato</h2>
+    
+            <div class="challenges-list">
+                
+                
+            </div>
+        </section>
+    
+        <section class="container page-section">
+            <h2 class="level-name">Nível 2 - Estagiário</h2>
+    
+            <div class="challenges-list">
+                
+            </div>
+    
+        </section>
+    
+        <section class="container page-section">
+            <h2 class="level-name">Nível 3 - Freelancer Iniciante</h2>
+    
+            <div class="challenges-list">
+            
+            </div>
+    
+        </section>
+    </article>
 
     <footer class="bg-light text-center text-lg-start">
         <!-- Copyright -->
@@ -132,6 +160,24 @@
         </div>
         <!-- Copyright -->
       </footer>
+
+      <script>
+
+        function showFrontEnd() {
+            document.getElementById("back-list").style.display = "none";
+            document.getElementById("back-end-button").classList.remove("active-button");
+            document.getElementById("front-list").style.display = "block";
+            document.getElementById("front-end-button").classList.add("active-button");
+        }
+
+        function showBackEnd() {
+            document.getElementById("front-list").style.display = "none";
+            document.getElementById("front-end-button").classList.remove("active-button");
+            document.getElementById("back-list").style.display = "block";
+            document.getElementById("back-end-button").classList.add("active-button");
+        }
+
+      </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 </body>
