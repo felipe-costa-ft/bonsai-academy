@@ -54,7 +54,7 @@ p {
 }
 
 .hero-text {
-    padding-top: 5em;
+    padding-top: 4em;
     font-size: 1.2em;
 }
 
@@ -64,8 +64,20 @@ p {
 }
 
 .icon {
-    fill: #46B39D;
     width: 5em;
+    background-color: white;
+    padding: 1em;
+    border-radius: 3em;
+    box-shadow: rgba(0, 0, 0, 0.25) 2px 2px 5px;
+    margin-bottom: 1em;
+}
+
+.icon > img {
+    width: 3em;
+}
+
+.text-box {
+    padding: 2em 2em 1em 2em;
 }
 
 /* Lista de desafios*/
@@ -123,6 +135,7 @@ p {
 
 .challenge-card {
     width: 20em;
+    box-shadow: rgba(0, 0, 0, 0.25) 2px 2px 5px;
 }
 
 .card-image {
@@ -254,6 +267,10 @@ p {
     padding-right: 2em;
 }
 
+.wpp-icon {
+    width: 5em;
+}
+
 /* Ranking */
 
 .avatar {
@@ -327,4 +344,7 @@ p {
         max-width: 100%;
     }
 
+    .text-col {
+        padding-top: 2em;
+    }
 }
