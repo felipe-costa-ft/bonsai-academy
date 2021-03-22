@@ -1,0 +1,14 @@
+Pagina 3
+
+<button>Baixar Material Gratuitamente</button>
+
+
+<h1>Comunidade do Discord</h1>
+
+- Tire suas dúvidas sobre os desafios que está realizando;
+- Conheça a solução de outras pessoas;
+- Fique por dentro de novos conteúdos gratuitos.
+
+<button>Entrar na comunidade</button>
+
+
